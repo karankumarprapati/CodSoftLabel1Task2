@@ -4,310 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>karan portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            height: auto;
-            width: 100%;
-            /* background-color: black; */
-            background: url("JPEG Image (161421).jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-         .main{
-            padding-block: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-          }
-          .container{
-           width: 96%;
-           height: 96%;
-           background-color: rgba(240, 248, 255, 0.118);
-           overflow: hidden;
-        }
-        .nav{
-            width: 100%;
-            height: auto;
-            background-color: rgba(5, 5, 5, 0.341);
-            margin-top: -15px;
-        }
-        .portfolio{
-            margin-right: 1rem;
-            background: linear-gradient(to right, coral, white, red);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            text-transform: uppercase;
-            text-decoration: wavy;
-        }
-        h1{
-            margin-inline: 1rem;
-            margin-top: 1rem;
-            font-size: 2.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 5rem;
-
-        }
-        .karan{
-            background: linear-gradient(to right, red, pink, coral, white,coral,white,pink,red);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-        }
-        
-        .info{
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: row;
-        }
-        .content{
-            width: 70%;
-            height: 80vh;
-            padding: 20px 20px 0px 20px;
-        }
-        #h2{
-            color: coral;
-            text-shadow: 5px 5px 3px black;
-            font-size: 2.5rem;
-        }
-        #p{
-            color: #fff;
-            text-shadow: 5px 5px 3px black;
-            font-size: 1.8rem;
-            line-height: 2.5rem;
-        }
-        .dp{
-            width: 30%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .image{
-            background-image: url("karan (2).jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 20rem;
-            height: 70vh;   
-        }
-       
-        .img{
-            margin-top: 30px;
-            margin-right: 30px;
-            height: 70%;
-            width: auto;
-            background-color: rgba(0, 0, 0, 0.418);
-            box-shadow: 0 5px 15px black;
-        }
-        
-        .socialMedia{
-           position: absolute;
-           bottom: 3rem;
-           display: flex;
-        }
-        .socialMedia li{
-            list-style: none;
-            z-index: 100;
-        }
-        .socialMedia li a{
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background:#aeacac;
-            margin: 5px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            font-size: 1.5em;
-        }
-        .socialMedia li a:hover{
-            background: #fff;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-      footer{
-        bottom: 0;
-        color: black;
-        width: 100%;
-        height: auto;
-        padding-top: 1.5rem;
-        text-align: center;
-        margin-top: 4rem;
-        background-color: rgb(196, 195, 195);
-        line-height: 30px;
-      }
-      
-      .section{
-        height: 400px;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-      }
-      .sect{
-        height: 100%;
-        width: 20%;
-        margin-top: 1rem;
-        background-color: rgba(5, 5, 5, 0.341);
-        box-shadow: 0 5px 15px black;
-        padding: 1rem;
-        color: white;
-        line-height: 1.5rem;
-        text-shadow: 1px 3px 3px black;
-      }
-      h3{
-        color:coral;
-        text-align: center;
-        text-shadow: 5px 5px 3px black;
-      }
-      .sect b{
-        color: black;
-        font-weight: 800;
-        font-size: 1.2rem;
-        text-shadow: none;
-      }  
-      ul{
-        list-style: none;
-      }
-      .delta{
-        height: 8rem;
-        width: 13rem;
-      }
-      .resume{
-        margin-top: 1rem;
-        margin-inline: 1rem;
-      }
-      a{
-        text-decoration: none;
-        color: #242424;
-      }
-      button{
-        padding-inline: 1rem;
-        border: none;
-        background-color: #aeacac;
-      }
-      button:hover{
-        background-color: white;
-      }
-      span{
-        padding: 5px 30px 5px 30px;
-        margin-inline: 3.1rem;
-        background-color: #fff;
-        color: gray;
-        font-weight: bold;
-      }
-      .social{
-        display: none;
-      }
-
-        /* responsive */
-        @media (max-width: 900px){
-            .main{
-            padding-block: 0px;
-            height: auto;
-          }
-          .container{
-           width: 100%;
-           height: auto;
-        }
-        .nav{
-            margin-top: -15px;
-            display: flex;
-            flex-direction: column;
-        }
-        .portfolio{
-           display: none;
-        }
-        .info{
-            flex-direction: column;
-        }
-        .content{
-            width: 100%;
-            height: auto;
-            padding: 10px;
-        }
-        .dp{
-            width: 100%;
-            height: auto;
-            margin-bottom: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .image{
-            width: 250px;
-            height: 250px; 
-            border-radius: 50%;  
-            box-shadow: 0 5px 5px black;
-        }
-        .img{
-            margin-right:0;
-            height: 100%;
-            width: 250px;
-            box-shadow: 0 0px 0px black;
-            border-radius: 50%;  
-        }
-        .s{
-            display: none;
-        }
-        .social{
-            display:contents;
-          }
-          .socialMedia{
-           position: relative;
-           bottom: 0px;
-           margin-top: 1rem;
-        }
-        .socialMedia li a{
-            margin: 3px;
-        }
-        .section{
-           height: auto;
-           justify-content: center;
-           flex-direction: column;
-         }
-         .sect{
-           height: auto;
-           width: 90%;
-         }
-         .delta{
-           height: auto;
-           width: 100%;
-         }
-         .resume{
-           margin-top: 1rem;
-           margin-inline: 2rem;
-           height: auto !important;
-           width: 80% !important;
-         }
-         #h2{
-            font-size: 2rem;
-        }
-        #p{
-            font-size: 1.5rem;
-            padding-right: 1rem;
-            line-height: 2rem;
-        }
-
-        }
-
-        
- </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="main">
         <div class="container">
-            
+            <!-- ---------------------------------------header------------------------------------------- -->
                 <header class="nav">
                     <h1>
                         <b class="karan">KARAN KUMAR</b> <I class="portfolio">Portfolio</I>
@@ -318,18 +23,30 @@
                     <div class="content">
                         <h2 id="h2">Hello You All</h2>
                         <p id="p">
-                            My name is Karan Kumar Prajapati, hailing from Gorakhpur, Uttar Pradesh. I hold a degree from Digvijai Nath Post Graduate College Gorakhpur,
-                            and specialized in web development. With a passion for creativity and an eagerness to contribute, I am actively seeking new opportunities in the field. <br>
+                            My name is Karan Kumar Prajapati, hailing from Gorakhpur,
+                             Uttar Pradesh. I hold a degree from Digvijai Nath Post Graduate College Gorakhpur,
+                            and specialized in web development. With a passion for creativity and an eagerness 
+                            to contribute, I am actively seeking new opportunities in the field. <br>
                             A passionate Full stack web developer having an experience of building Web projects with 
                             Javascript / React js / Node js / Html / Css and some other cool Libraries and Frameworks.
                         </p>
                         <div class="s">
                             <ul class="socialMedia">
-                                <li><a href="#" class="social"><i class="fa-brands fa-facebook" style="color: darkblue;"></i></a></li>
-                                <li><a href="#" class="social"><i class="fa-brands fa-twitter" style="color: darkslateblue;"></i></a></li>
-                                <li><a href="#" class="social"><i class="fa-brands fa-linkedin" style="color: blue;"></i></a></li>
-                                <li><a href="#" class="social"><i class="fa-brands fa-instagram" style="color: rgb(255, 0, 128);"></i></a></li>
-                                <li><a href="#" class="social"><i class="fa-brands fa-github" style="color: black;"></i></a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-facebook" style="color: darkblue;"></i>
+                                </a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-twitter" style="color: rgb(0, 130, 182);"></i>
+                                </a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-linkedin" style="color: blue;"></i>
+                                </a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-instagram" style="color: rgb(255, 0, 128);"></i>
+                                </a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-github" style="color: black;"></i>
+                                </a></li>
                             </ul>
                         </div>
                        
@@ -338,17 +55,28 @@
                         <div class="img"><div class="image"></div></div>
                         <div class="social">
                             <ul class="socialMedia">
-                                <li><a href="#" class="social"><i class="fa-brands fa-facebook" style="color: darkblue;"></i></a></li>
-                                <li><a href="#" class="social"><i class="fa-brands fa-twitter" style="color: darkslateblue;"></i></a></li>
-                                <li><a href="#" class="social"><i class="fa-brands fa-linkedin" style="color: blue;"></i></a></li>
-                                <li><a href="#" class="social"><i class="fa-brands fa-instagram" style="color: rgb(255, 0, 128);"></i></a></li>
-                                <li><a href="#" class="social"><i class="fa-brands fa-github" style="color: black;"></i></a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-facebook" style="color: darkblue;"></i>
+                                </a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-twitter" style="color: rgb(0, 112, 157);"></i>
+                                </a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-linkedin" style="color: blue;"></i>
+                                </a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-instagram" style="color: rgb(255, 0, 128);"></i>
+                                </a></li>
+                                <li><a href="#" class="social">
+                                    <i class="fa-brands fa-github" style="color: black;"></i>
+                                </a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
         </div>
     </div>
+    <!-- ---------------------------------------section-------------------------------------- -->
     <div class="section">
        <div class="sect">
        <h3> My Skills</h3>
@@ -363,7 +91,8 @@
         <li>Git, GtHub, Terminal, Use APIs</li>
         <li><b>Skill Certificate</b></li>
        </ul>
-       <a href="certificate-delta-batch-web-development-656c99c46d04c6b398053bca.pdf"><img src="delta.jpg" type="" class="delta">
+       <a href="certificate-delta-batch-web-development-656c99c46d04c6b398053bca.pdf">
+        <img src="delta.jpg" type="" class="delta">
        </a>
        </div>
        <div class="sect">
@@ -372,7 +101,8 @@
         <button><a href="">Show</a></button><br>
         <b>Amazon Clone</b><br>In this project we have try to design just like original amazon.<br>
         <button><a href="">Show</a></button><br>
-        <b>Spotify Clone</b><br>In this project, I have use html, css, javascript, bootstrap and i have also use extra feature with the help of APIs data fetch method for playing music.
+        <b>Spotify Clone</b><br>In this project, I have use html, css, javascript, bootstrap and 
+        i have also use extra feature with the help of APIs data fetch method for playing music.
         <br><button><a href="">Show</a></button><br>
        </div>
        <div class="sect">
@@ -383,11 +113,13 @@
        </div>
        <div class="sect">
         <h3>Contact Us</h3><br>
-        "Thank you for choosing us! Your satisfaction is our priority. Please let us know how we can assist you further. We appreciate your business!"<br><br>
-        <b>E-Mail Address</b><br>kp876002@gmail.com <br><b>Phone Number</b><br>+91 8756471397 <br><br><br><span>THANK YOU</span>
+        "Thank you for choosing us! Your satisfaction is our priority. Please let us know how we can assist you
+         further. We appreciate your business!"<br><br>
+        <b>E-Mail Address</b><br>kp876002@gmail.com <br><b>Phone Number</b><br>+91 8756471397 <br><br><br>
+        <span>THANK YOU</span>
        </div>
     </div>
-
+<!-- ------------------------------------footer----------------------------------------- -->
     <footer>
         <div class="copyright">
             <a href="">About Me</a><br>
